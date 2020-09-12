@@ -3,7 +3,9 @@ import './App.scss';
 
 function App() {
   return (
-    123
+    <React.Fragment>
+      123
+    </React.Fragment>
   );
 }
 
