@@ -7,9 +7,10 @@ const Register = props => {
     let [show, handleShow] = useState({});
     setTimeout(() => {
         handleShow({
-            type: 'success',
-            message: 'با موفقیت انجام شد',
-            show: true
+            type: 'danger',
+            message: ' .. خطا در ثبت کاربر',
+            show: true,
+            timeout: '1000'
         })
     }, 2000);
     return (
