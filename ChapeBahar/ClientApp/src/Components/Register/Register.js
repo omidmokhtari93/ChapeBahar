@@ -9,8 +9,7 @@ const Register = props => {
         handleShow({
             type: 'danger',
             message: ' .. خطا در ثبت کاربر',
-            show: true,
-            timeout: '1000'
+            show: true
         })
     }, 2000);
     return (
