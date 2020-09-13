@@ -1,17 +1,13 @@
 import React from 'react';
 import logo from '../../Assets/img/logo.png'
+import Alert from '../../UI/Alert/Alert';
 
 const Register = props => {
     return (
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-12 col-md-5 col-xl-4 my-5">
-                    <div className="alert alert-danger alert-dismissible fade show" role="alert">
-                        ثبت نام با خطا مواجعه شد
-                    <button type="button" className="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
+                    <Alert message="با موفقیت انجام شد" type="success" show/>
                     <div className="text-center mb-5">
                         <img src={logo} height="60" alt="logo" />
                     </div>

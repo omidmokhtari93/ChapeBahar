@@ -1,5 +1,5 @@
 import React from 'react'
-import './Login.css'
+import './Login.module.scss'
 import cover from '../../Assets/img/covers/auth-side-cover.jpg'
 
 const Login = props => {
