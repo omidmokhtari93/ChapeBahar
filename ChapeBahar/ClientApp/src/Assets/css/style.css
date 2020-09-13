@@ -1,74 +1,9 @@
 @charset "UTF-8";
-
-@font-face {
-    font-family: Github;
-    font-style: normal;
-    font-weight: 100;
-    src: url("../fonts/github/Hairline.eot");
-    src: url("../fonts/github/Hairline.woff") format("woff"), url("../fonts/github/Hairline.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: Github;
-    font-style: normal;
-    font-weight: 200;
-    src: url("../fonts/github/Thin.eot");
-    src: url("../fonts/github/Thin.woff") format("woff"), url("../fonts/github/Thin.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: Github;
-    font-style: normal;
-    font-weight: 300;
-    src: url("../fonts/github/Light.eot");
-    src: url("../fonts/github/Light.woff") format("woff"), url("../fonts/github/Light.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: Github;
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/github/Regular.eot");
-    src: url("../fonts/github/Regular.woff") format("woff"), url("../fonts/github/Regular.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: Github;
-    font-style: normal;
-    font-weight: 500;
-    src: url("../fonts/github/Medium.eot");
-    src: url("../fonts/github/Medium.woff") format("woff"), url("../fonts/github/Medium.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: Github;
-    font-style: normal;
-    font-weight: 600;
-    src: url("../fonts/github/Bold.eot");
-    src: url("../fonts/github/Bold.woff") format("woff"), url("../fonts/github/Bold.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: Github;
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/github/Heavy.eot");
-    src: url("../fonts/github/Heavy.woff") format("woff"), url("../fonts/github/Heavy.ttf") format("truetype")
-}
-
-@font-face {
-    font-family: Github;
-    font-style: normal;
-    font-weight: 800;
-    src: url("../fonts/github/Fat.eot");
-    src: url("../fonts/github/Fat.woff") format("woff"), url("../fonts/github/Fat.ttf") format("truetype")
-}
+@import url('fonts.css');
 
 body {
-    /* direction: rtl; */
-    font-family: Github !important;
+    font-family: chapebahar !important;
     font-size: 16px !important;
-    font-weight: 500 !important;
 }
 
 a,
@@ -79,12 +14,5 @@ h4,
 h5,
 h6,
 input {
-    font-family: Github !important;
-}
-
-
-*:focus,
-.form-selectgroup-input:focus+.form-selectgroup-label {
-    outline: none !important;
-    box-shadow: none !important;
+    font-family: chapebahar !important;
 }

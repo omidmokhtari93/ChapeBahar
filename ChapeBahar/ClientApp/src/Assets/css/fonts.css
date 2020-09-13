@@ -1,0 +1,71 @@
+@font-face {
+    font-family: chapebahar;
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/chapebahar/Hairline.eot");
+    src: url("../fonts/chapebahar/Hairline.woff") format("woff"),
+        url("../fonts/chapebahar/Hairline.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: chapebahar;
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/chapebahar/Thin.eot");
+    src: url("../fonts/chapebahar/Thin.woff") format("woff"),
+        url("../fonts/chapebahar/Thin.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: chapebahar;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/chapebahar/Light.eot");
+    src: url("../fonts/chapebahar/Light.woff") format("woff"),
+        url("../fonts/chapebahar/Light.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: chapebahar;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/chapebahar/Regular.eot");
+    src: url("../fonts/chapebahar/Regular.woff") format("woff"),
+        url("../fonts/chapebahar/Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: chapebahar;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/chapebahar/Medium.eot");
+    src: url("../fonts/chapebahar/Medium.woff") format("woff"),
+        url("../fonts/chapebahar/Medium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: chapebahar;
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/chapebahar/Bold.eot");
+    src: url("../fonts/chapebahar/Bold.woff") format("woff"),
+        url("../fonts/chapebahar/Bold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: chapebahar;
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/chapebahar/Heavy.eot");
+    src: url("../fonts/chapebahar/Heavy.woff") format("woff"),
+        url("../fonts/chapebahar/Heavy.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: chapebahar;
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/chapebahar/Fat.eot");
+    src: url("../fonts/chapebahar/Fat.woff") format("woff"),
+        url("../fonts/chapebahar/Fat.ttf") format("truetype")
+}
