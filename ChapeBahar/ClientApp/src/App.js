@@ -5,9 +5,9 @@ import Register from './Components/Register/Register';
 
 function App() {
   return (
-    <div className="d-flex align-items-center bg-auth border-top border-top-3 border-primary vh-100">
-      {/* <Login /> */}
-      <Register />
+    <div className="d-flex align-items-center bg-auth border-top border-top-2 border-primary app-min-height">
+      <Login />
+      {/* <Register /> */}
     </div>
   );
 }
