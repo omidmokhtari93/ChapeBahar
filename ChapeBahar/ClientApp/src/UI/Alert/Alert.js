@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
+import Wrapper from '../../Shared/Wrapper';
+import style from './Alert.module.scss';
 
 const Alert = ({ show, message, type }) => {
-    const [hide, handleHide] = useState(false);
-
+    const [hide, handleHide] = useState(true);
     return (
-        <React.Fragment>
-            {show && <div className={`alert alert-${type} alert-dismissible fade show`}>
+        <Wrapper>
+            {<div className={`alert alert-${type} ` + style.reactAlert}
+                onClick={() => handleHide(false)}
+                style={(show && hide)
+                    ? { left: '10px' }
+                    : { left: '-50%' }}>
                 {message}
-                <span className="">×</span>
             </div>}
-        </React.Fragment>
+        </Wrapper>
     )
 }
 

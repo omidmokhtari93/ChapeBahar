@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import './Assets/css/theme.css'
 import './Assets/css/style.css'
+import './Assets/fonts/feather/feather.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
