@@ -13,7 +13,7 @@ const Alert = ({ show, message, type, timeout }) => {
                 onClick={() => handleHide(false)}
                 style={(show && hide)
                     ? { left: '10px' }
-                    : { left: '-80%' }}>
+                    : { left: '-100%' }}>
                 {message}
             </div>}
         </Wrapper>
