@@ -69,3 +69,123 @@
     src: url("../fonts/chapebahar/Fat.woff") format("woff"),
         url("../fonts/chapebahar/Fat.ttf") format("truetype")
 }
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/chapebahar-new/eot/Thin.eot');
+    src: url('../fonts/chapebahar-new/eot/Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/Thin.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/chapebahar-new/eot/ExtraLight.eot');
+    src: url('../fonts/chapebahar-new/eot/ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/ExtraLight.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/ExtraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/chapebahar-new/eot/Light.eot');
+    src: url('../fonts/chapebahar-new/eot/Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/Light.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/chapebahar-new/eot/Medium.eot');
+    src: url('../fonts/chapebahar-new/eot/Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/Medium.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/chapebahar-new/eot/SemiBold.eot');
+    src: url('../fonts/chapebahar-new/eot/SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/SemiBold.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: 750;
+    src: url('../fonts/chapebahar-new/eot/ExtraBold.eot');
+    src: url('../fonts/chapebahar-new/eot/ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/ExtraBold.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/chapebahar-new/eot/UltraBold.eot');
+    src: url('../fonts/chapebahar-new/eot/UltraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/UltraBold.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/UltraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: 850;
+    src: url('../fonts/chapebahar-new/eot/Black.eot');
+    src: url('../fonts/chapebahar-new/eot/Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/Black.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/chapebahar-new/eot/Heavy.eot');
+    src: url('../fonts/chapebahar-new/eot/Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/Heavy.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/Heavy.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: 1000;
+    src: url('../fonts/chapebahar-new/eot/SuperHeavy.eot');
+    src: url('../fonts/chapebahar-new/eot/SuperHeavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/SuperHeavy.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/SuperHeavy.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/chapebahar-new/eot/Bold.eot');
+    src: url('../fonts/chapebahar-new/eot/Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/Bold.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: chapebahar-new;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/chapebahar-new/eot/Regular.eot');
+    src: url('../fonts/chapebahar-new/eot/Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/chapebahar-new/woff2/Regular.woff2') format('woff2'),
+        url('../fonts/chapebahar-new/woff/Regular.woff') format('woff');
+}
