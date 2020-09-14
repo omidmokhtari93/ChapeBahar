@@ -2,7 +2,7 @@
 @import url('fonts.css');
 
 body {
-    font-family: chapebahar-new !important;
+    font-family: chapebahar !important;
     font-size: 16px !important;
 }
 
@@ -14,7 +14,7 @@ h4,
 h5,
 h6,
 input {
-    font-family: chapebahar-new !important;
+    font-family: chapebahar !important;
 }
 
 .pointer {
