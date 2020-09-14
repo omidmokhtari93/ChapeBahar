@@ -4,12 +4,7 @@ import ReactNotification from 'react-notifications-component'
 import Loading from './UI/Loading/Loading'
 import './App.scss';
 
-const Login = lazy(() => {
-  return new Promise(resolve => {
-    setTimeout(() => resolve(import('./Components/Login/Login')), 0);
-  });
-});
-
+const Login = lazy(() => import('./Components/Login/Login'));
 const Register = lazy(() => import('./Components/Register/Register'));
 const LoadingELement = <div className="text-center w-100"><Loading /></div>
 
