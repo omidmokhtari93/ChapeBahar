@@ -1,9 +1,13 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebApi.Entities;
+using WebApi.Helpers;
+using WebApi.Services;
 
 namespace ChapeBahar
 {
@@ -24,6 +28,14 @@ namespace ChapeBahar
             {
                 configuration.RootPath = "ClientApp/build";
             });
+            services.AddSingleton<IConnectionStringProvider, ConnectionStringProvider>();
+            services.AddDbContext<ChapeBaharContext>();
+            // configure basic authentication 
+            services.AddAuthentication("BasicAuthentication")
+                .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+
+            // configure DI for application services
+            services.AddScoped<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +72,14 @@ namespace ChapeBahar
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
+            app.UseAuthentication();
+
+            app.UseMvc();
         }
     }
 }
