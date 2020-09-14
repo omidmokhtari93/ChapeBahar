@@ -1,6 +1,7 @@
 using System;
 using System.Text;
 using System.Threading.Tasks;
+using ChapeBahar.Controllers.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -59,10 +60,7 @@ namespace ChapeBahar
                             var tokenValidatorService = context.HttpContext.RequestServices.GetRequiredService<ITokenValidatorService>();
                             return tokenValidatorService.ValidateAsync(context);
                         },
-                        OnMessageReceived = context =>
-                        {
-                            return Task.CompletedTask;
-                        },
+                        OnMessageReceived = context => Task.CompletedTask,
                         OnChallenge = context =>
                         {
                             var logger = context.HttpContext.RequestServices.GetRequiredService<ILoggerFactory>().CreateLogger(nameof(JwtBearerEvents));
