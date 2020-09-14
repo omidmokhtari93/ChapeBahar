@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import logo from '../../Assets/img/logo.png'
 import Wrapper from '../../Shared/Wrapper';
 import { withRouter } from 'react-router-dom';
+import Loading from '../../UI/Loading/Loading';
 
 const Register = props => {
-    
+
     return (
         <Wrapper>
             <div className="container">
