@@ -1,21 +1,12 @@
 import React, { useState } from 'react';
 import logo from '../../Assets/img/logo.png'
 import Wrapper from '../../Shared/Wrapper';
-import Alert from '../../UI/Alert/Alert';
 import { withRouter } from 'react-router-dom';
 
 const Register = props => {
-    let [show, handleShow] = useState({});
-    // setTimeout(() => {
-    //     handleShow({
-    //         type: 'danger',
-    //         message: ' .. خطا در ثبت کاربر',
-    //         show: true
-    //     })
-    // }, 2000);
+    
     return (
         <Wrapper>
-            <Alert {...show} />
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-5 col-xl-4 my-5">

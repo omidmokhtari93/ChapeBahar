@@ -4,6 +4,8 @@ import 'bootstrap/dist/js/bootstrap.js';
 import './Assets/css/theme.css'
 import './Assets/css/style.css'
 import './Assets/fonts/feather/feather.css'
+import 'react-notifications-component/dist/theme.css'
+import 'animate.css/animate.compat.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';

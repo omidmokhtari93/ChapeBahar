@@ -2,20 +2,30 @@ import React, { useState } from 'react'
 import './Login.module.scss'
 import logo from '../../Assets/img/logo.png'
 import { withRouter } from 'react-router-dom'
-import Alert from '../../UI/Alert/Alert'
+import { store } from 'react-notifications-component';
+import { notifConfig } from '../../UI/Notification/Notification.config'
 
 const Login = props => {
     let [inputType, showPassword] = useState('password');
     let [userData, handleChange] = useState({ username: '', password: '' });
-    let [show, showAlert] = useState({ type: '', message: '' });
+
     const loginUser = () => {
-        if (userData.username.trim().length == 0 || userData.password.trim().length == 0) {
-            showAlert({ ...show, type: 'danger', message: 'نام کابری و رمز عبور را وارد کنید' })
+        if (userData.username.trim() == '' || userData.password.trim() == '') {
+            store.addNotification({
+                ...notifConfig,
+                message: "نام کاربری و رمز عبور را وارد کنید",
+                type: "danger"
+            });
+        } else {
+            store.addNotification({
+                ...notifConfig,
+                message: "شما با موفقیت وارد شدید",
+                type: "success"
+            });
         }
     }
     return (
         <div className="container">
-            <Alert {...show} />
             <div className="row justify-content-center">
                 <div className="col-12 col-md-5 col-xl-4 my-5">
                     <div className="text-center mb-5">
