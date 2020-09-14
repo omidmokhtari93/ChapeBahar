@@ -1,19 +1,9 @@
-using System;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
-using sample_22_backend.Converters;
-using sample_22_backend.Models;
-using sample_22_backend.Services;
 
 namespace ChapeBahar
 {
