@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import logo from '../../Assets/img/logo.png'
 import Wrapper from '../../Shared/Wrapper';
 import Alert from '../../UI/Alert/Alert';
+import { withRouter } from 'react-router-dom';
 
 const Register = props => {
     let [show, handleShow] = useState({});
-    setTimeout(() => {
-        handleShow({
-            type: 'danger',
-            message: ' .. خطا در ثبت کاربر',
-            show: true
-        })
-    }, 2000);
+    // setTimeout(() => {
+    //     handleShow({
+    //         type: 'danger',
+    //         message: ' .. خطا در ثبت کاربر',
+    //         show: true
+    //     })
+    // }, 2000);
     return (
         <Wrapper>
             <Alert {...show} />
@@ -30,15 +31,15 @@ const Register = props => {
                                 <form className="needs-validation" noValidate>
                                     <div className="form-group">
                                         <label>نام و نام خانوادگی</label>
-                                        <input type="name" className="form-control" placeholder="محسن نصیری" required />
+                                        <input type="name" className="form-control" placeholder="حروف فارسی" required />
                                     </div>
                                     <div className="form-group">
                                         <label>شماره موبایل</label>
-                                        <input type="username" className="form-control" placeholder="09357892060" required />
+                                        <input type="username" className="form-control" placeholder="×××××××××09" required />
                                     </div>
                                     <div className="form-group">
                                         <label>کد معرف</label>
-                                        <input type="username" className="form-control" placeholder="در صورت موجود وارد کنید" />
+                                        <input type="username" className="form-control" placeholder="اختیاری" />
                                     </div>
                                     <div className="form-group">
                                         <div className="custom-control custom-switch">
@@ -72,7 +73,8 @@ const Register = props => {
                                 <div className="text-center">
                                     <div className="text-muted text-center mb-3">حساب کاربری دارید؟ </div>
                                 </div>
-                                <a className="btn btn-primary btn-lg btn-block" href="#">ورود</a>
+                                <a className="btn btn-primary btn-lg btn-block"
+                                    onClick={() => props.history.replace('/login')}>ورود</a>
                             </div>
                         </div>
                     </div>
@@ -82,4 +84,4 @@ const Register = props => {
     )
 }
 
-export default Register;
+export default withRouter(Register);

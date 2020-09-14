@@ -1,52 +1,54 @@
 import React from 'react'
 import './Login.module.scss'
 import logo from '../../Assets/img/logo.png'
+import { withRouter } from 'react-router-dom'
 
 const Login = props => {
     console.log()
     return (
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-5 col-xl-4 my-5">
-                    <div class="text-center mb-5">
+        <div className="container">
+            <div className="row justify-content-center">
+                <div className="col-12 col-md-5 col-xl-4 my-5">
+                    <div className="text-center mb-5">
                         <img src={logo} height="50" alt="logo" />
                     </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-header-title text-center">ورود به حساب کاربری</h4>
+                    <div className="card">
+                        <div className="card-header">
+                            <h4 className="card-header-title text-center">ورود به حساب کاربری</h4>
                         </div>
-                        <div class="card-body">
-                            <form class="needs-validation" novalidate>
-                                <div class="form-group">
+                        <div className="card-body">
+                            <form className="needs-validation" noValidate>
+                                <div className="form-group">
                                     <label>نام کاربری</label>
-                                    <input type="username" class="form-control" placeholder="09357892060" required />
+                                    <input type="username" className="form-control" placeholder="ایمیل یا شماره موبایل" required />
                                 </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col">
+                                <div className="form-group">
+                                    <div className="row">
+                                        <div className="col">
                                             <label>رمز عبور</label>
                                         </div>
-                                        <div class="col-auto">
-                                            <a href="#" class="form-text small text-muted">فراموشی رمز عبور</a>
+                                        <div className="col-auto">
+                                            <a href="#" className="form-text small text-muted">فراموشی رمز عبور</a>
                                         </div>
                                     </div>
-                                    <div class="input-group input-group-merge">
-                                        <input type="password" class="form-control form-control-appended" required />
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">
-                                                <span class="fe fe-eye"></span>
+                                    <div className="input-group input-group-merge">
+                                        <input type="password" className="form-control form-control-appended" required />
+                                        <div className="input-group-append">
+                                            <span className="input-group-text">
+                                                <span className="fe fe-eye"></span>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn btn-success btn-lg btn-block mb-3">ورود</button>
+                                <button className="btn btn-success btn-lg btn-block mb-3">ورود</button>
                             </form>
                         </div>
-                        <div class="card-footer">
-                            <div class="text-center">
-                                <div class="text-muted text-center mb-3">حساب کاربری ندارید؟</div>
+                        <div className="card-footer">
+                            <div className="text-center">
+                                <div className="text-muted text-center mb-3">حساب کاربری ندارید؟</div>
                             </div>
-                            <a class="btn btn-primary btn-lg btn-block" href="#">ثبت نام</a>
+                            <a onClick={() => props.history.replace('/register')}
+                                className="btn btn-primary btn-lg btn-block">ثبت نام</a>
                         </div>
                     </div>
                 </div>
@@ -54,4 +56,4 @@ const Login = props => {
         </div>
     )
 }
-export default Login;
+export default withRouter(Login);
