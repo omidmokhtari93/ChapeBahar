@@ -5,21 +5,24 @@ import { withRouter } from 'react-router-dom'
 import { store } from 'react-notifications-component';
 import { notifConfig } from '../../UI/Notification/Notification.config'
 import { userService } from '../../Services/User.Service';
+import Loading from '../../UI/Loading/Loading';
 
 const Login = props => {
     let [inputType, showPassword] = useState('password');
     let [userData, handleChange] = useState({ username: '', password: '' });
-
+    let [show, showLoading] = useState(false)
     const loginUser = () => {
+        showLoading(true)
         if (userData.username.trim() == '' || userData.password.trim() == '') {
             store.addNotification({
                 ...notifConfig,
                 message: "نام کاربری و رمز عبور را وارد کنید",
                 type: "danger"
             });
+            showLoading(false)
         } else {
             userService.login(userData.username, userData.password).then(auth => {
-                console.log(data)
+                showLoading(false)
             })
         }
     }
@@ -64,9 +67,10 @@ const Login = props => {
                                         </div>
                                     </div>
                                 </div>
-                                <button className="btn btn-success btn-lg btn-block mb-3" type="button"
+                                <button className="btn btn-success btn-lg btn-block" type="button"
                                     onClick={() => loginUser()}>ورود</button>
                             </form>
+                            <Loading show={show} />
                         </div>
                         <div className="card-footer">
                             <div className="text-center">

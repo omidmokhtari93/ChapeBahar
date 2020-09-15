@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
 import './Loading.css'
 
 const Loading = ({ show }) => {
     return (
-        <div className="cssload-container">
-            <div className="cssload-whirlpool"></div>
-        </div>
+        show ? <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div> : null
     )
 }
 
