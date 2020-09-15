@@ -12,7 +12,6 @@ function login(username, password) {
     }
     return http.post('Users/Authenticate', data)
         .then(response => {
-            console.log(response)
             if (response.data.user) {
                 let user = window.btoa(username + ':' + password);
                 localStorage.setItem('user', user);

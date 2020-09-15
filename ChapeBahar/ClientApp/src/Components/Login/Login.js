@@ -18,8 +18,8 @@ const Login = props => {
                 type: "danger"
             });
         } else {
-            userService.login(userData.username, userData.password).then(data => {
-                //console.log(data)
+            userService.login(userData.username, userData.password).then(auth => {
+                console.log(data)
             })
         }
     }
