@@ -4,6 +4,7 @@ import logo from '../../Assets/img/logo.png'
 import { withRouter } from 'react-router-dom'
 import { store } from 'react-notifications-component';
 import { notifConfig } from '../../UI/Notification/Notification.config'
+import { userService } from '../../Services/User.Service';
 
 const Login = props => {
     let [inputType, showPassword] = useState('password');
@@ -17,11 +18,9 @@ const Login = props => {
                 type: "danger"
             });
         } else {
-            store.addNotification({
-                ...notifConfig,
-                message: "شما با موفقیت وارد شدید",
-                type: "success"
-            });
+            userService.login(userData.username, userData.password).then(data => {
+                //console.log(data)
+            })
         }
     }
     return (

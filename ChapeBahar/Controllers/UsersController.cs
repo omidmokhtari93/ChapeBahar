@@ -19,15 +19,13 @@ namespace WebApi.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost("authenticate")]
+        [HttpPost("Authenticate")]
         public async Task<IActionResult> Authenticate([FromBody]User userParam)
         {
             var user = await _userService.Authenticate(userParam.Username, userParam.Password);
-
-            if (user == null)
-                return BadRequest(new { message = "Username or password is incorrect" });
-
-            return Ok(user);
+            return Ok(user == null
+                ? new { type = "danger", message = "نام کاربری یا کلمه عبور اشتباه است", user = (User) null }
+                : new { type = "success", message = "با موفقیت وارد شدید", user = user });
         }
 
         [AllowAnonymous]
