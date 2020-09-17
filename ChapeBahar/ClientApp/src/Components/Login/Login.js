@@ -52,7 +52,7 @@ const Login = props => {
                                         </div>
                                         <div className="col-auto">
                                             <a onClick={() => props.history.replace('/forget')}
-                                                className="form-text small text-muted">فراموشی رمز عبور</a>
+                                                className="form-text small text-muted pointer">فراموشی رمز عبور</a>
                                         </div>
                                     </div>
                                     <div className="input-group input-group-merge">

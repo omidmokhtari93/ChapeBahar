@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router';
 import ReactNotification from 'react-notifications-component'
-import Loading from './UI/Loading/Loading'
+import Loading from './UI/PageLoading/PageLoading'
 import './App.scss';
 
 const Login = lazy(() => import('./Components/Login/Login'));
