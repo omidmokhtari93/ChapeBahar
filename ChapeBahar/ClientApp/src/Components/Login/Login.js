@@ -9,11 +9,11 @@ import Loading from '../../UI/Loading/Loading';
 
 const Login = props => {
     let [inputType, showPassword] = useState('password');
-    let [userData, handleChange] = useState({ username: '', password: '' });
+    let [userData, handleChange] = useState({ Username: '', Password: '' });
     let [show, showLoading] = useState(false)
     const loginUser = () => {
         showLoading(true)
-        if (userData.username.trim() == '' || userData.password.trim() == '') {
+        if (userData.Username.trim() == '' || userData.Password.trim() == '') {
             store.addNotification({
                 ...notifConfig,
                 message: "نام کاربری و رمز عبور را وارد کنید",
@@ -21,7 +21,8 @@ const Login = props => {
             });
             showLoading(false)
         } else {
-            userService.login(userData.username, userData.password).then(auth => {
+            userService.login(userData).then(auth => {
+                console.log(auth)
                 showLoading(false)
             })
         }
@@ -42,7 +43,7 @@ const Login = props => {
                                 <div className="form-group">
                                     <label>نام کاربری</label>
                                     <input type="username" className="form-control" placeholder="ایمیل یا شماره موبایل" autoComplete="off"
-                                        onChange={e => handleChange({ ...userData, username: e.target.value })} />
+                                        onChange={e => handleChange({ ...userData, Username: e.target.value })} />
                                 </div>
                                 <div className="form-group">
                                     <div className="row">
@@ -56,7 +57,7 @@ const Login = props => {
                                     </div>
                                     <div className="input-group input-group-merge">
                                         <input type={inputType} className="form-control form-control-appended" autoComplete="off"
-                                            onChange={e => handleChange({ ...userData, password: e.target.value })} />
+                                            onChange={e => handleChange({ ...userData, Password: e.target.value })} />
                                         <div className="input-group-append pointer"
                                             onClick={() => (inputType == 'password')
                                                 ? showPassword('text')
