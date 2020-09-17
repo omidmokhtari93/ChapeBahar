@@ -27,7 +27,8 @@ namespace ChapeBahar
             // configure basic authentication 
             services.AddAuthentication("BasicAuthentication")
                 .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
-
+            services.AddSingleton<IConnectionStringProvider, ConnectionStringProvider>();
+            services.AddDbContext<ChapeBaharContext>();
             // configure DI for application services
             services.AddScoped<IUserService, UserService>();
             services.AddSpaStaticFiles(configuration =>
