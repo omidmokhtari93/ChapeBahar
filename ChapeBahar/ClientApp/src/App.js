@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router';
 import ReactNotification from 'react-notifications-component'
 import Loading from './UI/PageLoading/PageLoading'
 import './App.scss';
+import Main from './Components/Main/Main';
+import Layout from './Components/AppLayout/AppLayout';
 
 const Login = lazy(() => import('./Components/Login/Login'));
 const Register = lazy(() => import('./Components/Register/Register'));
@@ -13,15 +15,16 @@ function App() {
   return (
     <React.Fragment>
       <ReactNotification />
-      <div className="d-flex align-items-center bg-auth border-top border-top-2 border-primary app">
+      <Layout>
         <Suspense fallback={LoadingELement}>
           <Switch>
+            <Route path="/" exact render={() => <Main />} />
             <Route path="/login" render={() => <Login />} />
             <Route path="/register" render={() => <Register />} />
             <Route path="/forget" render={() => <ForgetPassword />} />
           </Switch>
         </Suspense>
-      </div>
+      </Layout>
     </React.Fragment>
   );
 }
