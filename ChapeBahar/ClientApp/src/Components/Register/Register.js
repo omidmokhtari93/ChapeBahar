@@ -12,7 +12,7 @@ const Register = props => {
                 <div className="text-center mb-5">
                     <img src={logo} height="50" alt="logo" /></div>
                 <div className="card">
-                    <div className="card-header bg-light">
+                    <div className="card-header">
                         <h4 className="card-header-title text-center">ایجاد حساب کاربری</h4>
                     </div>
                     <div className="card-body">

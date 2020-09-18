@@ -1,11 +1,14 @@
 import React from 'react';
 import pic from '../../Assets/img/livan.jpg'
+import './Product.scss';
 
 const Product = props => {
     return (
-        <div className="card">
-            <img className="card-img-top" src={pic} alt="..." />
-            <div className="card-body pt-0 pb-0">
+        <div className="card product-shadow pointer">
+            <div className="img-container card-img-top">
+                <img className="card-img-top zoom" src={pic} alt="..." />
+            </div>
+            <div className="card-body pt-0 pb-0 product-body">
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item d-flex align-items-center justify-content-between px-0">
                         <small>اندازه</small> <small>7 در 7 سانتی متر</small>

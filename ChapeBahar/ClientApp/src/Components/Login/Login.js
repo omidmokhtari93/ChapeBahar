@@ -35,7 +35,7 @@ const Login = props => {
                     <img src={logo} height="50" alt="logo" />
                 </div>
                 <div className="card">
-                    <div className="card-header bg-light">
+                    <div className="card-header">
                         <h4 className="card-header-title text-center">ورود به حساب کاربری</h4>
                     </div>
                     <div className="card-body">

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('fonts.css');
+@import url("fonts.css");
 
 body {
     font-family: chapebahar !important;
@@ -15,8 +15,4 @@ h5,
 h6,
 input {
     font-family: chapebahar !important;
-}
-
-.pointer {
-    cursor: pointer !important;
 }

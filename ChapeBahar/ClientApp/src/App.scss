@@ -3,4 +3,15 @@
   position: relative !important;
   width: 100% !important;
   overflow-x: hidden;
+  background: #f5f5f5;
+}
+
+.rtl {
+  direction: rtl !important;
+}
+.ltr {
+  direction: ltr !important;
+}
+.pointer {
+  cursor: pointer !important;
 }

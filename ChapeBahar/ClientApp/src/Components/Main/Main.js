@@ -7,15 +7,18 @@ import Navbar from '../../UI/Navbar/Navbar';
 const Main = props => {
     return (
         <Wrapper>
+            <Navbar />
             <ComponentsLayout >
-                <Navbar />
-                <div className="col-12 col-md-4 col-xl-4 my-5">
+                <div className="col-12 col-md-3 col-xl-3 my-5">
                     <Product />
                 </div>
-                <div className="col-12 col-md-4 col-xl-4 my-5">
+                <div className="col-12 col-md-3 col-xl-3 my-5">
                     <Product />
                 </div>
-                <div className="col-12 col-md-4 col-xl-4 my-5">
+                <div className="col-12 col-md-3 col-xl-3 my-5">
+                    <Product />
+                </div>
+                <div className="col-12 col-md-3 col-xl-3 my-5">
                     <Product />
                 </div>
             </ComponentsLayout>

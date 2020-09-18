@@ -5,6 +5,7 @@ import Loading from './UI/PageLoading/PageLoading'
 import './App.scss';
 import Main from './Components/Main/Main';
 import Layout from './Components/AppLayout/AppLayout';
+import Navbar from './UI/Navbar/Navbar';
 
 const Login = lazy(() => import('./Components/Login/Login'));
 const Register = lazy(() => import('./Components/Register/Register'));
@@ -15,16 +16,17 @@ function App() {
   return (
     <React.Fragment>
       <ReactNotification />
-      <Layout>
-        <Suspense fallback={LoadingELement}>
-          <Switch>
-            <Route path="/" exact render={() => <Main />} />
+      <Suspense fallback={LoadingELement}>
+        <Switch>
+          <Route path="/" exact render={() => <Main />} />
+          <Layout>
             <Route path="/login" render={() => <Login />} />
             <Route path="/register" render={() => <Register />} />
             <Route path="/forget" render={() => <ForgetPassword />} />
-          </Switch>
-        </Suspense>
-      </Layout>
+          </Layout>
+        </Switch>
+      </Suspense>
+
     </React.Fragment>
   );
 }
