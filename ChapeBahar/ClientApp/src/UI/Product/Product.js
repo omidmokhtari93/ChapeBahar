@@ -4,9 +4,6 @@ import pic from '../../Assets/img/livan.jpg'
 const Product = props => {
     return (
         <div className="card">
-            <div className="card-header">
-                <div className="text-center">مگنت بزرگ</div>
-            </div>
             <img className="card-img-top" src={pic} alt="..." />
             <div className="card-body pt-0 pb-0">
                 <ul className="list-group list-group-flush">
