@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Layout = props =>{
+const AppLayout = props =>{
     return(
         <div className="d-flex align-items-center bg-auth border-primary app">
             {props.children}
@@ -9,4 +9,4 @@ const Layout = props =>{
     )
 }
 
-export default Layout;
+export default AppLayout;

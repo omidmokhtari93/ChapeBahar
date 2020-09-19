@@ -1,4 +1,5 @@
 import React from 'react'
+import { withRouter } from 'react-router';
 import logo from '../../Assets/img/logo.png'
 import './Navbar.scss';
 
@@ -27,11 +28,13 @@ const Navbar = props => {
                     </li>
                 </ul>
                 <div className="pl-2 enter">
-                    <a>ورود</a> / <a>ثبت نام</a>
+                    <a onClick={()=> props.history.replace('/login')}>ورود</a>
+                     / 
+                     <a onClick={()=> props.history.replace('/register')}>ثبت نام</a>
                 </div>
             </div>
         </nav>
     )
 }
 
-export default Navbar;
+export default withRouter(Navbar);
