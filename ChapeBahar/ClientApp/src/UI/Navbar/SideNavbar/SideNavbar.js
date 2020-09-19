@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SideNavbar.scss';
 import Backdrop from '../Backdrop/Backdrop';
 import Links from '../Links/Links';
 
 const SideNavbar = props => {
+    useEffect(() => {
+        props.show ? document.body.classList.add('stop-scrolling') :
+            document.body.classList.remove('stop-scrolling')
+    })
     return (
         <React.Fragment>
             <Backdrop show={props.show} dismiss={props.close} />

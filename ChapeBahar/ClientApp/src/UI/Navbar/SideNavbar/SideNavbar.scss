@@ -11,15 +11,19 @@
     }
 }
 
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 @media (max-width: 991px) {
     #side-navbar {
         direction: rtl !important;
     }
-    .nav-link{
-        
+    .nav-link {
     }
     .navbar-nav {
-        width: 100% ;
+        width: 100%;
         padding: 0 2rem 0 0;
         .navbar-logo {
             padding: 10px 16px !important;
