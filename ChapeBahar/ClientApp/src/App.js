@@ -5,7 +5,6 @@ import Loading from './UI/PageLoading/PageLoading'
 import './App.scss';
 import Main from './Components/Main/Main';
 import Layout from './Components/AppLayout/AppLayout';
-import Navbar from './UI/Navbar/Navbar';
 
 const Login = lazy(() => import('./Components/Login/Login'));
 const Register = lazy(() => import('./Components/Register/Register'));

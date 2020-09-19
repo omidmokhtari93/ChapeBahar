@@ -1,0 +1,19 @@
+.fe-home {
+    color: rgb(0, 170, 85);
+}
+.fe-layers{
+    color: rgb(9, 114, 201);
+}
+.fe-hash{
+    color: tomato;
+}
+.fe-phone{
+    color: rgb(0, 149, 175);
+}
+@media (min-width: 992px) {
+    .nav-item {
+        span {
+            display: none !important;
+        }
+    }
+}

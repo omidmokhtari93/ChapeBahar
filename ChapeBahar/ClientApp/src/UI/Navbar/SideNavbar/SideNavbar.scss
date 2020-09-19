@@ -1,0 +1,35 @@
+.side-nav {
+    height: 100%;
+    position: absolute;
+    width: 70%;
+    transition: 0.3s;
+    z-index: 99999;
+    background-color: #fff;
+    border: 1px solid #e3ebf6;
+    #side-navbar {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    #side-navbar {
+        direction: rtl !important;
+    }
+    .nav-link{
+        
+    }
+    .navbar-nav {
+        width: 100% ;
+        padding: 0 2rem 0 0;
+        .navbar-logo {
+            padding: 10px 16px !important;
+        }
+    }
+    .nav-item {
+        text-align: right;
+        border-bottom: 1px solid rgb(231, 231, 231);
+    }
+    .dropdown:hover > .dropdown-menu {
+        display: block !important;
+    }
+}
