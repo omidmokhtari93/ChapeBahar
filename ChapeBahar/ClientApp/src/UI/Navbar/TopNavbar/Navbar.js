@@ -22,8 +22,14 @@ const Navbar = props => {
                         <img src={logo} />
                     </div>
                     <div className="pl-2 enter">
-                        <a onClick={() => props.history.replace('/login')}>ورود</a>/
-                        <a onClick={() => props.history.replace('/register')}>ثبت نام</a>
+                        <a
+                            onClick={() => props.history.replace('/login')}>
+                            ورود
+                        </a> /
+                        <a
+                            onClick={() => props.history.replace('/register')}>
+                            ثبت نام
+                        </a>
                     </div>
                     <span className="enter-icon fe fe-user"
                         onClick={() => props.history.replace('/login')}></span>
