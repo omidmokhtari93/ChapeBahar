@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 import Links from '../Links/Links';
 import SideNavbar from '../SideNavbar/SideNavbar';
 import './Navbar.scss';
+import logo from '../../../Assets/img/logo.png'
 
 const Navbar = props => {
     let [showSide, handleShowSidenav] = useState(false)
@@ -17,6 +18,9 @@ const Navbar = props => {
                     <ul className="navbar-nav top-navbar">
                         <Links />
                     </ul>
+                    <div className="center-logo">
+                        <img src={logo} />
+                    </div>
                     <div className="pl-2 enter">
                         <a onClick={() => props.history.replace('/login')}>ورود</a>/
                         <a onClick={() => props.history.replace('/register')}>ثبت نام</a>
