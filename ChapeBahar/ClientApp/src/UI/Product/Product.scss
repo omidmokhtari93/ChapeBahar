@@ -17,3 +17,15 @@
     transform: scale(1.2);
     transform-origin: 50% 50%;
 }
+
+@media (max-width: 991px) {
+    .product {
+        margin-bottom: 15px;
+        .card-body {
+            padding: 0.4rem 0.4rem 0 0.4rem !important;
+        }
+        .list-group-item {
+            padding: 0.4rem 0.25rem !important;
+        }
+    }
+}

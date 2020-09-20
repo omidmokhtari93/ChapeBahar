@@ -9,16 +9,16 @@ const Main = props => {
         <Wrapper>
             <Navbar />
             <ComponentsLayout >
-                <div className="col-12 col-md-3 col-xl-3 my-1">
+                <div className="col-6 col-md-3 col-xl-3 my-1">
                     <Product />
                 </div>
-                <div className="col-12 col-md-3 col-xl-3 my-1">
+                <div className="col-6 col-md-3 col-xl-3 my-1">
                     <Product />
                 </div>
-                <div className="col-12 col-md-3 col-xl-3 my-1">
+                <div className="col-6 col-md-3 col-xl-3 my-1">
                     <Product />
                 </div>
-                <div className="col-12 col-md-3 col-xl-3 my-1">
+                <div className="col-6 col-md-3 col-xl-3 my-1">
                     <Product />
                 </div>
             </ComponentsLayout>

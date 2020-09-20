@@ -4,7 +4,7 @@ import './Product.scss';
 
 const Product = props => {
     return (
-        <div className="card product-shadow pointer">
+        <div className="card product product-shadow pointer">
             <div className="img-container card-img-top">
                 <img className="card-img-top zoom" src={pic} alt="..." />
             </div>
@@ -14,7 +14,7 @@ const Product = props => {
                         <small>اندازه</small> <small>7 در 7 سانتی متر</small>
                     </li>
                     <li className="list-group-item d-flex align-items-center justify-content-between px-0">
-                        <small>ضد آب</small> <i className="fe fe-x-circle text-danger"></i>
+                        <small>ضد آب</small> <i className="fe fe-droplet text-danger"></i>
                     </li>
                     <li className="list-group-item d-flex align-items-center justify-content-between px-0">
                         <small>ضد ضربه</small> <i className="fe fe-check-circle text-success"></i>
