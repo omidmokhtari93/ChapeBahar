@@ -26,7 +26,7 @@
 
 .slider {
     div.slide {
-        padding: 10px;
+        padding: 10px 10px 0px 10px;
     }
 }
 
@@ -46,28 +46,12 @@
     flex-shrink: 0;
 }
 
-
-
-
-
 ::-webkit-scrollbar {
-    height: 18px;
+    height: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
-    border: 8px solid rgba(255, 255, 255, 0);
-    border-left: 0;
-    border-right: 0;
-    background-clip: padding-box;
-    -webkit-border-radius: 1px;
-    background-color: rgb(145, 145, 145);
-    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
-}
-
-::-webkit-scrollbar-button {
-    width: 0;
-    height: 0;
-    display: none;
+    background-color: black;
 }
 
 ::-webkit-scrollbar-corner {
